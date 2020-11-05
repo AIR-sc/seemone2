@@ -7,6 +7,7 @@
       <field name="model">passwodoo.passwodoo</field>
       <field name="arch" type="xml">
         <tree>
+          <field name="cliente">
           <field name="name"/>
           <field name="description"/>
           <field name="expiringDate"/>
@@ -25,7 +26,7 @@
     
 
     <!-- server action to the one above -->
-    <!--
+    
     <record model="ir.actions.server" id="passwodoo.action_server">
       <field name="name">passwodoo server</field>
       <field name="model_id" ref="model_passwodoo_passwodoo"/>
@@ -38,24 +39,24 @@
         }
       </field>
     </record>
-    -->
+    
 
     <!-- Top menu item -->
     
     <menuitem name="passwodoo" id="passwodoo.menu_root"/>
     
     <!-- menu categories -->
-    <!--
+    
     <menuitem name="Menu 1" id="passwodoo.menu_1" parent="passwodoo.menu_root"/>
     <menuitem name="Menu 2" id="passwodoo.menu_2" parent="passwodoo.menu_root"/>
-    -->
+    
     <!-- actions -->
     
     <menuitem name="List" id="passwodoo.menu_1_list" parent="passwodoo.menu_1"
               action="passwodoo.action_window"/>
-    <!--
+    
     <menuitem name="Server to list" id="passwodoo" parent="passwodoo.menu_2"
               action="passwodoo.action_server"/>
-    -->
+    
   </data>
 </odoo>
